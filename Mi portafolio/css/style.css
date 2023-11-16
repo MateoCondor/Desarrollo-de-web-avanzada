@@ -1,0 +1,38 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #003049;
+    color: #FCBF49;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: #FCBF49;
+}
+
+nav a {
+    color: #003049 !important;
+}
+
+section {
+    padding: 2em;
+    
+}
+
+.row {
+    padding: 15px;
+}
+
+
+footer {
+    background-color: #003049;
+    color: #FCBF49;
+    text-align: center;
+    padding: 1em;
+
+    bottom: 0;
+    width: 100%;
+}
