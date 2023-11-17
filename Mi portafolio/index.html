@@ -5,103 +5,174 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi portafolio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link src="js/script.js">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 
-<body>
-    <header>
-        <h2>Mi portafolio</h2>
-    </header>
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo"> Mateo Condor </a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a  onclick="alternar()">Inicio</a></li>
-                <li><a  onclick="mostrar()">Sobre Mí</a></li>
-                <li><a href="">Habilidades</a></li>
-                <li><a href="">Proyectos</a></li>
-                <li><a href="">Contacto</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <div id="inicio" class="row">
-        <section class="col s6">
-
-        </section>
-
-        <section  class="col s6">
-            <h4>¡Hola, soy Mateo!</h4>
-            <p>Bienvenido a mi portafolio. Aquí encontrarás información sobre mí y mis habilidades.</p>
-        </section>
+<body onload="alternar('inicio')">
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo"> Portafolio </a>
+                <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a onclick="alternar('inicio')">Inicio</a></li>
+                    <li><a onclick="alternar('sobre-mi')">Sobre Mí</a></li>
+                    <li><a onclick="alternar('habilidades')">Habilidades</a></li>
+                    <li><a onclick="alternar('proyectos')">Proyectos</a></li>
+                    <li><a onclick="alternar('contacto')">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
 
-    <div class="row">
-        <div class="col s6">
+    <ul class="sidenav" id="mobile-nav">
+        <li><a onclick="alternarYCerrar('inicio')">Inicio</a></li>
+        <li><a onclick="alternarYCerrar('sobre-mi')">Sobre Mí</a></li>
+        <li><a onclick="alternarYCerrar('habilidades')">Habilidades</a></li>
+        <li><a onclick="alternarYCerrar('proyectos')">Proyectos</a></li>
+        <li><a onclick="alternarYCerrar('contacto')">Contacto</a></li>
+    </ul>
+    <br>
+    <br>
+    <div class="container">
+        <div id="inicio" class="row">
+            <section class="col s12 m6">
+                <img width="100%" src="img/yo.jpg" alt="">
+            </section>
+
+            <section class="col s12 m6">
+                <h4>¡Hola!</h4>
+                <p>¡Bienvenido a mi Portafolio Web!
+
+                    Me complace enormemente tenerte aquí, explorando mi espacio digital.
+                    Este portafolio es más que una simple colección de trabajos; es una ventana a mi creatividad,
+                    habilidades y pasión por lo que hago.
+                    Aquí encontrarás una variedad de proyectos que reflejan mi dedicación a la excelencia y mi constante
+                    búsqueda de la innovación.
+                    <br><br>
+                    Explora a tu gusto y descubre la diversidad de habilidades que puedo aportar. Si tienes alguna
+                    pregunta, estoy aquí para responder. ¡Gracias por visitar y espero que encuentres inspiración en mi
+                    trabajo!
+                    <br><br>
+                    ¡Disfruta tu recorrido!
+
+                </p>
+            </section>
+        </div>
+
+        <div id="sobre-mi" class="row">
+            <section class="col s12 m6">
+                <img width="100%" src="img/yo.jpg" alt="">
+            </section>
+
+            <section class="col s12 m6">
+                <h4>Sobre Mí</h4>
+                <p>¡Hola, soy Mateo Condor, un apasionado del mundo digital y un amante de la programación y el
+                    desarrollo web. Mi naturaleza introvertida encuentra su expresión más plena en la creación de
+                    códigos y el diseño de experiencias online cautivadoras. Mi fascinación por aprender cosas nuevas
+                    impulsa mi constante evolución en este siempre cambiante universo tecnológico.
+                    <br><br>
+                    Entre líneas de código, encuentro inspiración en las notas de la música, otro de mis grandes amores.
+                    Disfruto explorar géneros diversos que alimentan mi creatividad y aportan ritmo a mi vida. De vez en
+                    cuando, me sumerjo en mundos virtuales a través de videojuegos, encontrando en ellos una paleta de
+                    narrativas fascinantes.
+                    <br><br>
+                    Cuando no estoy inmerso en el mundo digital, me sumerjo en las páginas de libros que cuentan
+                    historias cautivadoras. La lectura es mi refugio, un espacio donde la imaginación vuela libremente.
+                </p>
+            </section>
 
         </div>
 
-        <section id="sobre-mi" class="col s6">
-            <h4>Sobre Mí</h4>
-            <p>¡Hola! Soy [Tu Nombre], un apasionado [tu profesión o área de interés]. Me encanta [algo sobre ti].</p>
-        </section>
-
-    </div>
-
-    <div class="row">
-        <div class="col s6">
-
-        </div>
-        <section id="habilidades" class="col s6">
-            <h4>Habilidades</h4>
-            <ul>
-                <li>Desarrollo Web</li>
-                <li>Programación en [lenguajes]</li>
-                <li>Diseño UX/UI</li>
-                <!-- Añade más habilidades según tus conocimientos -->
-            </ul>
-        </section>
-
-    </div>
-
-    <div class="row">
-        <div class="col s6">
+        <div id="habilidades" class="row">
+            <section class="col s12 m6">
+                <img width="100%" src="img/yo.jpg" alt="">
+            </section>
+            <section class="col s12 m6">
+                <h4>Habilidades</h4>
+                <ul>
+                    <br>
+                    <li>Desarrollo Web</li>
+                    <br>
+                    <li>Programación en C, C++, PHP, JavaScript </li>
+                    <br>
+                    <li>Manejo de bases de datos</li>
+                    <br>
+                    <li>Manejo de herramientas de diseño</li>
+                    <br>
+                    <li>Manejo de herramientas de ofimática</li>
+                </ul>
+            </section>
 
         </div>
 
-        <section id="proyectos" class="col s6">
-            <h4>Proyectos</h4>
-            <p>Aquí puedes encontrar algunos de los proyectos en los que he trabajado. Haz clic en cada uno para obtener
-                más
-                detalles.</p>
-            <!-- Lista de proyectos con enlaces y descripciones -->
-        </section>
+        <div id="proyectos" class="row">
+            <section class="col s12 m6">
+                <img width="100%" src="img/yo.jpg" alt="">
+            </section>
 
-    </div>
-
-    <div class="row">
-        <div class="col s6">
+            <section class="col s12 m6">
+                <h4>Proyectos</h4>
+                <p>Aquí puedes encontrar algunos de los proyectos en los que he trabajado.</p>
+                <ul>
+                    <li><a href="https://github.com/MateoCondor/PointOfSaleSystem">Desarrollo de una app en java para la
+                            gestion de una panaderia</a></li>
+                    <br>
+                    <li>Un identificador de texto de palabras especificas con resultados psicologicos</li>
+                    <br>
+                    <li><a href="https://github.com/MateoCondor/Proyecto_3_parcial">Un sistema de gestion de inventarios
+                            para una pizzeria</a></li>
+                    <br>
+                    <li><a href="https://github.com/MateoCondor/GroupTreeTrieGroup">Proyecto grafico en C++ de un
+                            algoritmo arbol trie de numeros y palabras </a></li>
+                    <br>
+                    <li><a href="https://github.com/MateoCondor/Grupo_5_Repository">Desarrollo de algoritmos de
+                            ordenamiento en estructura de datos</a></li>
+                </ul>
+            </section>
 
         </div>
 
-        <section id="contacto" class="col s6">
-            <h4>Contacto</h4>
-            <p>¡Me encantaría saber de ti! Puedes contactarme a través de:</p>
-            <ul>
-                <li>Email: [tu@email.com]</li>
-                <li>LinkedIn: [tu perfil de LinkedIn]</li>
-                <!-- Agrega más información de contacto según sea necesario -->
-            </ul>
-        </section>
-    </div>
+        <div id="contacto" class="row">
+            <section class="col s12 m6">
+                <img width="100%" src="img/yo.jpg" alt="">
+            </section>
 
+            <section class="col s12 m6">
+                <h4>Contacto</h4>
+                <p>¡Me encantaría saber de ti! Puedes contactarme a través de:</p>
+                <div class="row">
+                    <div class="col m1"><img width="35px" src="img/mail.png" alt=""></div>
+                    <div class="col m11">condormateo00@gmail.com</div>
+                </div>
+                <div class="row">
+                    <div class="col m1"><a href="https://github.com/MateoCondor"><img width="35px" src="img/git.png" alt=""></a></div>
+                    <div class="col m11">Mi github</div>
+                </div>
+                <div class="row">
+                    <div class="col m1"><a href="https://www.linkedin.com/in/mateo-c%C3%B3ndor-989a72289/"><img width="35px" src="img/linkedin.png" alt=""></a></div>
+                    <div class="col m11">Mi linkedin</div>
+                </div>
+                <div class="row">
+                    <div class="col m1"><a href="https://www.instagram.com/m._.teo.c/"><img width="35px" src="img/ig.png" alt=""></a></div>
+                    <div class="col m11">Mi instagram</div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
     <footer>
         <p>&copy; 2023 Mateo Condor. Todos los derechos reservados.</p>
     </footer>
 
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

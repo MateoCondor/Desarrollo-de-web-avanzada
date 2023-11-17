@@ -1,38 +1,39 @@
-body {
-    font-family: 'Roboto', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Slab:wght@300;400&display=swap');
 
-header {
-    background-color: #003049;
-    color: #FCBF49;
-    text-align: center;
-    padding: 1em;
+body {
+    font-family: 'Roboto Slab', serif;
 }
 
 nav {
-    background-color: #FCBF49;
+    background-color: #003049;
 }
 
 nav a {
-    color: #003049 !important;
+    color: #FCBF49 !important;
 }
 
 section {
     padding: 2em;
-    
 }
 
 .row {
     padding: 15px;
 }
 
+#inicio,
+#sobre-mi,
+#habilidades,
+#proyectos,
+#contacto {
+    background-color: #EAE2B7;
+    color: #003049;
+}
 
 footer {
     background-color: #003049;
     color: #FCBF49;
     text-align: center;
-    padding: 1em;
-
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
