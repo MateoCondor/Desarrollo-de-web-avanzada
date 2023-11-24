@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\condo\\Documents\\Universidad 5to\\Web av\\MiProyecto\\MiProyecto.csproj",
+      "projectUniqueName": "C:\\Users\\condo\\Documents\\Universidad 5to\\Web av\\Desarrollo-de-web-avanzada\\MiProyecto\\MiProyecto.csproj",
       "projectName": "MiProyecto",
-      "projectPath": "C:\\Users\\condo\\Documents\\Universidad 5to\\Web av\\MiProyecto\\MiProyecto.csproj",
+      "projectPath": "C:\\Users\\condo\\Documents\\Universidad 5to\\Web av\\Desarrollo-de-web-avanzada\\MiProyecto\\MiProyecto.csproj",
       "packagesPath": "C:\\Users\\condo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\condo\\Documents\\Universidad 5to\\Web av\\MiProyecto\\obj\\",
+      "outputPath": "C:\\Users\\condo\\Documents\\Universidad 5to\\Web av\\Desarrollo-de-web-avanzada\\MiProyecto\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\condo\\AppData\\Roaming\\NuGet\\NuGet.Config"
