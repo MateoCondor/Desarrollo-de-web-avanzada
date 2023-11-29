@@ -1,4 +1,4 @@
-Cabe aclarar que el pryecto se ejecuta en la version 6 de .NET
+Cabe aclarar que el proyecto se ejecuta en la version 6 de .NET
 
 Se debe instalar desde el panel de herramientas > Administrador de paquetes NuGet > Administrar paquetes NuGet para la solucion
 
@@ -10,7 +10,9 @@ Para poder ejecuar el programa hay que cambiar unas lineas de codigo en el archi
   "conexion": "Server= <nombre_de_tu_computadora> ; DataBase=MVCCRUD; integrated security=true;"
 }
 
-Se debe poner el nombre de la computadora en la que se esta ejecutando.
-Cabe aclarar que previamente se debe de haber configurado sql server apropiadamente.
+La base de datos esta junto con la carpeta con el nombre "SQLQuery1"
 
-luego simplemente de debe ejecutar el programa.
+Se debe poner el nombre de la computadora en la que se esta ejecutando.
+Cabe aclarar que previamente se debe de haber configurado SQL server apropiadamente.
+
+luego simplemente se debe ejecutar el programa.
