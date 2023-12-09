@@ -1,0 +1,11 @@
+<h1>Detalles de la tarea</h1>
+
+<div *ngIf="tarea">
+    <h2>{{ tarea.value.title }}</h2>
+    <p><strong>Descripción:</strong> {{ tarea.value.desc }}</p>
+    <p><strong>Estado:</strong> {{ tarea.value.complete ? 'Completada' : 'Pendiente' }}</p>
+</div>
+
+<div *ngIf="!tarea">
+    <p>No se encontraron detalles de la tarea.</p>
+</div>

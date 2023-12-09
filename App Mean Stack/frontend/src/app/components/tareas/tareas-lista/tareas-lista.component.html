@@ -1,0 +1,5 @@
+<ul>
+    <h2><li *ngFor="let tarea of arrayTareas"[routerLink]="['/tareas',tarea._id]">
+    {{tarea.title}}
+    </li></h2>
+</ul>
